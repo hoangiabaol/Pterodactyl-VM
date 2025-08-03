@@ -1,41 +1,42 @@
 # Pterodactyl-VM
 
 > **Repository:** [hoangiabaol/Pterodactyl-VM](https://github.com/hoangiabaol/Pterodactyl-VM)  
+> **Ngôn ngữ:** Shell  
 
-[View English version here](./README.md)
+👉 [View English version here](./README.md)
 
 ---
 
-## Gii thiu
+## Giới thiệu
 
-**Pterodactyl-VM** l� mt repo h tr to "m�y o" chy Alpine Linux b�n trong container ca Pterodactyl Panel.
+**Pterodactyl-VM** là một repo hỗ trợ tạo "máy ảo" chạy Alpine Linux bên trong container của Pterodactyl Panel.
 
-> **D �n gc:**  
-> Repo n�y da tr�n d �n gc ti [RealTriassic/Harbor](https://github.com/RealTriassic/Harbor/blob/main/harbor.sh). T�i ch l� ngi cp nht v� ci tin script cho ph� hp vi nhu cu s dng c� nh�n.
+> **Dự án gốc:**  
+> Repo này dựa trên dự án gốc tại [RealTriassic/Harbor](https://github.com/RealTriassic/Harbor/blob/main/harbor.sh). Tôi chỉ là người cập nhật và cải tiến script cho phù hợp với nhu cầu sử dụng cá nhân.
 
-## T�nh nng
+## Tính năng
 
-- T ng h�a c�c thao t�c li�n quan n VM trong Pterodactyl.
-- D d�ng t�ch hp v�o h thng hin c�.
-- Vit bng Shell script, tng th�ch vi hu ht m�i trng Linux.
+- Tự động hóa các thao tác liên quan đến VM trong Pterodactyl.
+- Dễ dàng tích hợp vào hệ thống hiện có.
+- Viết bằng Shell script, tương thích với hầu hết môi trường Linux.
 
-## Y�u cu
+## Yêu cầu
 
-- M�y ch chy h iu h�nh Linux.
-- c trin khai trong m�i trng s dng Pterodactyl Panel.
+- Máy chủ chạy hệ điều hành Linux.
+- Được triển khai trong môi trường sử dụng Pterodactyl Panel.
 
-### Y�u cu phn cng
+### Yêu cầu phần cứng
 
-- CPU: `x86_64` hoc `AARCH64` (ARM 64)
-- RAM: Ti thiu 35MB kh dng  
-- Storage: Ti thiu 40MB dung lng trng *(c� th �t hn vn chy c)*
-- Internet: Bt buc phi c� kt ni mng
+- CPU: `x86_64` hoặc `AARCH64` (ARM 64)
+- RAM: Tối thiểu 35MB khả dụng  
+- Storage: Tối thiểu 40MB dung lượng trống *(có thể ít hơn vẫn chạy được)*
+- Internet: Bắt buộc phải có kết nối mạng
 
 ## Credits
 
-- Da tr�n � tng v� script gc t d �n [Harbor](https://github.com/RealTriassic/Harbor) ca [RealTriassic](https://github.com/RealTriassic).
+- Dựa trên ý tưởng và script gốc từ dự án [Harbor](https://github.com/RealTriassic/Harbor) của [RealTriassic](https://github.com/RealTriassic).
 
-## �ng g�p
+## Đóng góp
 
-- Fork repo v� to Pull Request nu bn mun �ng g�p code hoc ci tin t�i liu.
-- Mi � kin �ng g�p u c hoan ngh�nh!
+- Fork repo và tạo Pull Request nếu bạn muốn đóng góp code hoặc cải tiến tài liệu.
+- Mọi ý kiến đóng góp đều được hoan nghênh!
