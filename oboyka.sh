@@ -1,9 +1,5 @@
 #!/bin/sh
 
-#############################
-# Alpine Linux Installation #
-#############################
-
 ROOTFS_DIR=/home/container
 ALPINE_VERSION="3.22"
 ALPINE_FULL_VERSION="3.22.1"
@@ -20,7 +16,6 @@ else
     exit 1
 fi
 
-# Check if Alpine is already installed
 if [ -e "$ROOTFS_DIR/.installed" ]; then
     echo "Alpine đã được cài rồi, skip bước cài đặt"
 else
@@ -58,10 +53,14 @@ else
 fi
 
 
-##########################
-# Hiện thông tin lệnh cơ bản  #
-##########################
 clear && cat << "EOF"
+
+ ██╗  ██╗ █████╗ ██████╗ ██████╗  ██████╗ ██████╗ 
+ ██║  ██║██╔══██╗██╔══██╗██╔══██╗██╔═══██╗██╔══██╗
+ ███████║███████║██████╔╝██████╔╝██║   ██║██████╔╝
+ ██╔══██║██╔══██║██╔══██╗██╔══██╗██║   ██║██╔══██╗
+ ██║  ██║██║  ██║██║  ██║██████╔╝╚██████╔╝██║  ██║
+ ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝╚═════╝  ╚═════╝ ╚═╝  ╚═╝
 
  Welcome to Alpine Linux minirootfs!
 
@@ -75,10 +74,6 @@ clear && cat << "EOF"
 
 EOF
 
-###############################
-# Start PRoot Alpine session #
-###############################
-
 "$ROOTFS_DIR/usr/local/bin/proot" \
     --rootfs="$ROOTFS_DIR" \
     --link2symlink \
@@ -88,6 +83,5 @@ EOF
     --bind=/proc \
     --bind=/dev \
     --bind=/sys \
-    --bind=/usr \
     --bind=/tmp \
     /bin/sh
